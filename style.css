@@ -1,0 +1,272 @@
+/* Reinicio básico */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background-image:url("../img/DigComp2.2.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+}
+/* Encabezado */
+
+header{
+    color:rgb(20, 16, 16);
+    text-align:center;
+    padding:30px;
+}
+
+/* Contenedor principal */
+
+main{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Tarjeta */
+
+.tarjeta{
+
+    background:rgba(195, 205, 223, 0.95);
+
+    width:650px;
+
+    max-width:90%;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+}
+
+/* Título */
+
+.tarjeta h2{
+
+    color:#1E3A8A;
+
+    margin-bottom:25px;
+
+    text-align:center;
+
+}
+
+/* Formulario */
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+/* Etiquetas */
+
+label{
+
+    font-weight:bold;
+
+}
+
+/* Entradas */
+
+input,
+select{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+/* Botón principal */
+
+button{
+
+    background:#0d2a7a;
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#4e65b3;
+
+}
+
+/* Botones del cuestionario */
+
+.opciones{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    margin:25px 0;
+
+}
+
+.opcion{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.verde{
+
+    background:#087932;
+
+    color:white;
+
+}
+
+.amarillo{
+
+    background:#dac240;
+
+    color:#333;
+
+}
+
+.rojo{
+
+    background:#d43232;
+
+    color:white;
+
+}
+
+.seleccionado{
+
+    border:4px solid #1E3A8A;
+
+    box-shadow:0 0 20px rgba(30,58,138,.45);
+
+    transform:scale(1.03);
+
+}
+
+/* Navegación */
+
+.navegacion{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:10px;
+
+}
+
+.navegacion button{
+
+    width:100%;
+
+}
+.progreso{
+
+    width:100%;
+
+    height:15px;
+
+    background:#ddd;
+
+    border-radius:20px;
+
+    margin-bottom:20px;
+
+}
+
+#barraProgreso{
+
+    width:0%;
+
+    height:100%;
+
+    background:#22c55e;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+}
+
+#contadorPregunta{
+
+    text-align:center;
+
+    font-weight:bold;
+
+    color:#1E3A8A;
+
+    margin-bottom:15px;
+
+}
+
+#pregunta{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    line-height:1.5;
+
+}
