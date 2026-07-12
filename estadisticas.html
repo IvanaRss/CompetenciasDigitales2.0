@@ -1,0 +1,94 @@
+<body>
+    <head>
+
+<meta charset="UTF-8">
+
+<title>Dashboard de Competencias Digitales</title>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/estadisticas.css">
+
+
+</head>
+
+<h1>Dashboard de Competencias Digitales</h1>
+
+
+<div class="tarjetas">
+
+    <div class="tarjetaInfo">
+        <h3>Total participantes</h3>
+        <p id="totalParticipantes">0</p>
+    </div>
+
+
+    <div class="tarjetaInfo">
+        <h3>Promedio</h3>
+        <p id="promedio">0</p>
+    </div>
+
+
+    <div class="tarjetaInfo">
+        <h3>Nivel predominante</h3>
+        <p id="nivelFrecuente">-</p>
+    </div>
+
+</div>
+
+
+
+<div class="contenedorDashboard">
+
+
+    <div class="grafica">
+        <h2>Nivel obtenido</h2>
+        <canvas id="graficaNivel"></canvas>
+    </div>
+
+
+    <div class="grafica">
+        <h2>Distribución por Edad</h2>
+        <canvas id="graficaEdad"></canvas>
+    </div>
+
+
+    <div class="grafica">
+        <h2>Distribución por Género</h2>
+        <canvas id="graficaGenero"></canvas>
+    </div>
+
+
+    <div class="grafica">
+        <h2>Respuestas por Pregunta</h2>
+        <canvas id="graficaPreguntas"></canvas>
+    </div>
+
+
+    <div class="grafica">
+        <h2>Competencias Digitales</h2>
+        <canvas id="graficaCompetencias"></canvas>
+    </div>
+
+
+</div>
+
+
+
+<!-- ORDEN IMPORTANTE -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="js/supabase.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+
+<script src="js/datos.js"></script>
+
+<script src="js/graficas.js"></script>
+
+
+</body>

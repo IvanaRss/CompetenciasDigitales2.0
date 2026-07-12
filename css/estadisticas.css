@@ -1,0 +1,236 @@
+
+body{
+
+    margin:0;
+
+    padding:30px;
+
+    font-family:
+    'Segoe UI',
+    Arial,
+    sans-serif;
+
+    background:
+    linear-gradient(
+        135deg,
+        #e8f1fb,
+        #ffffff
+    );
+
+}
+
+
+/* TITULO PRINCIPAL */
+
+h1{
+
+    text-align:center;
+
+    color:#003B71;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    margin-bottom:40px;
+
+}
+
+
+
+/* ==========================
+   TARJETAS SUPERIORES
+========================== */
+
+
+.tarjetas{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.tarjetaInfo{
+
+
+    background:white;
+
+
+    width:230px;
+
+
+    padding:25px;
+
+
+    text-align:center;
+
+
+    border-radius:18px;
+
+
+    border-top:6px solid #F5B400;
+
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.15);
+
+
+}
+
+
+
+.tarjetaInfo h3{
+
+
+    color:#003B71;
+
+
+    font-size:17px;
+
+
+}
+
+
+
+.tarjetaInfo p{
+
+
+    color:#005CA9;
+
+
+    font-size:34px;
+
+
+    font-weight:bold;
+
+
+    margin:10px;
+
+
+}
+
+
+
+/* ==========================
+   CONTENEDOR DE GRAFICAS
+========================== */
+
+
+.contenedorDashboard{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(450px,1fr));
+
+
+    gap:30px;
+
+
+}
+
+
+
+/* ==========================
+   TARJETAS DE GRAFICAS
+========================== */
+
+
+.grafica{
+
+
+    background:white;
+
+
+    padding:25px;
+
+
+    border-radius:20px;
+
+
+    border-top:6px solid #003B71;
+
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.15);
+
+
+}
+
+
+
+.grafica:hover{
+
+
+    transform:translateY(-5px);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+/* TITULO DE CADA GRAFICA */
+
+
+.grafica h2{
+
+
+    text-align:center;
+
+
+    color:#003B71;
+
+
+    font-size:21px;
+
+
+    font-weight:700;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+/* TAMAÑO DE GRAFICAS */
+
+
+canvas{
+
+
+    max-height:350px;
+
+
+}
+
+
+
+/* ==========================
+   COLORES DE APOYO
+========================== */
+
+
+strong{
+
+    color:#F5B400;
+
+}
